@@ -1,6 +1,6 @@
 pkgbase = gconf
 	pkgdesc = An obsolete configuration database system
-	pkgver = 3.2.6+11+g07808097
+	pkgver = 3.2.6_11_g07808097
 	pkgrel = 10
 	url = https://projects-old.gnome.org/gconf/
 	install = gconf.install
@@ -32,4 +32,3 @@ pkgbase = gconf
 	sha256sums = 436a65ff290095bc3d35d7d6297cf4d647f61e9f9922cea7ef9f1e251b447ff7
 
 pkgname = gconf
-

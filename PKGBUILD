@@ -2,7 +2,7 @@
 # Contributor: Jan de Groot <jan@archlinux.org>
 
 pkgname=gconf
-pkgver=3.2.6+11+g07808097
+pkgver=3.2.6_11_g07808097
 pkgrel=10
 pkgdesc="An obsolete configuration database system"
 url="https://projects-old.gnome.org/gconf/"
@@ -22,6 +22,11 @@ sha256sums=('SKIP'
             'bf1928718caa5df2b9e54a13cfd0f15a8fe0e09e86b84385ce023616a114e898'
             '2732b2a6b187c5620105a036bde12edee99669605f70cbde56fe5f39619c3dc0'
             '436a65ff290095bc3d35d7d6297cf4d647f61e9f9922cea7ef9f1e251b447ff7')
+
+pkgver() {
+  cd $pkgname
+  git describe --tags --long | sed s/-/_/g
+}
 
 prepare() {
   cd $pkgname
